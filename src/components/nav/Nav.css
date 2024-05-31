@@ -1,0 +1,47 @@
+nav a{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    color: var(--color-primary);
+    max-width: max-content;
+    transition: var(--transition);
+    font-size: 1.7rem;
+    padding: 0.6rem 0.6rem;
+    border-radius: 50%;
+   
+}
+nav a:hover{
+    color: var(--color-bg);
+    background: var(--color-primary);
+}
+nav{
+    display: flex;
+    transform: translateX(-48%);
+    gap: 2.3rem;
+    position: fixed;
+    left: 52%;
+    max-width: max-content;
+    padding: 0.7rem 3rem;
+    background: rgba(140, 140, 140, 0.1);
+    bottom: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 51px;
+    backdrop-filter: blur(20px);
+}
+nav a.active{
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+@media screen and (max-width:600px){
+  nav{
+    padding: 0.5rem 1rem;
+    gap: 2rem;
+    left: 50.5%;
+    transform: translateX(-49.5%);
+
+  } 
+  nav a{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,135 @@
+h4{
+    font-weight: 200;
+    color: var(--color-light);
+    line-height: 0.5rem;
+}
+h1{
+    color: var(--color-primary);
+    font-weight: 500;
+    
+}
+.S_Head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-bottom: 3rem;
+    flex-direction: column;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.service__container{
+  display: grid;
+  grid-template-columns: 40% 40% 40%;
+  gap: 2%;
+  place-content: center;
+}
+.card {
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--color-bg-variant);
+    border: 2px solid none;
+    border-radius: 43px;
+    /* transition: all 500ms; */
+    padding: 2rem;
+    padding-top: 0;
+    border: 2px solid transparent;
+    padding-right: 0;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    min-height: max-content;
+  }
+  .small-desc {
+    color: var(--color-white);
+    font-size: 1rem;
+    text-align: start;
+  }
+  .serv_content{
+    padding-right: 1rem;
+  }
+  
+  .card-title {
+    color: var(--color-light);
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+  }
+
+  .go-arrow {
+    color: var(--color-primary);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-bg);
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    border-radius: 0px 39px 0px 39px;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--color-bg), #384c6c);
+  }
+  .serv__main{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80% 20%;
+    aspect-ratio: 0/0.3;
+  }
+.corner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+  .card:hover{
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-bg);
+  }
+  .card:hover .go-arrow{
+border: 2px solid var(--color-primary);
+  }
+  @media screen and (max-width:1024px) {
+    .service__container{
+      grid-template-columns: repeat(2,1fr);
+      gap: 10%;
+    }
+    .card{
+      width: 120%;
+      aspect-ratio: 1/1.5;
+    }
+    .serv__main{
+      aspect-ratio: 1/0.3;
+    }
+    .go-arrow{
+      height: 3rem;
+    }
+     }
+     @media screen and (max-width:600px){
+      #services{
+        margin-top: 1rem;
+      }
+      .service__container{
+        grid-template-columns: 1fr;
+        gap: 4%;
+      }
+      .card{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+      .go-arrow{
+        height: 5rem;
+      }
+     .small-desc{
+      font-size: 0.8rem;
+     }
+     .card-title{
+      font-size: 1.5rem;
+     }
+     .serv__main{
+      aspect-ratio: 0 / 0.2
+    }
+     }

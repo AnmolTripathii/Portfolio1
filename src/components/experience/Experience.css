@@ -1,0 +1,140 @@
+h4{
+    font-weight: 200;
+    color: var(--color-light);
+    line-height: 0.5rem;
+}
+h1{
+    color: var(--color-primary);
+    font-weight: 500;
+    
+}
+.E_Head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-bottom: 3rem;
+    flex-direction: column;
+}
+.exp__container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 15%;
+    place-items: center;
+}
+.web_d{
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    display: grid;
+    /* place-items: center; */
+    background-color: var(--color-bg-variant);
+    border: 2px solid var(--color-bg-variant);
+    border-radius: 43px;
+    padding: 2rem;
+    transition: all 500ms;
+    
+}
+.web_d:hover{
+    background-color: var(--color-bg);
+    border-color: var(--color-primary);
+}
+.web_d h3{
+    align-self: center;
+    font-size: 1.5rem;
+    justify-self: center;
+}
+.skillset{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    font-size: 1.3rem;
+   margin-bottom: 2rem;
+
+}
+.exp__icon{
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    
+}
+.skill{
+    display: grid;
+    grid-template-columns: 10% 70%;
+    gap: 20%;
+}
+.skillsets{
+    display: grid;
+    grid-template-columns: 10% 70%;
+    gap: 20%;
+}
+.coding{
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    display: grid;
+    /* place-items: center; */
+    background-color: var(--color-bg-variant);
+    border: 2px solid var(--color-bg-variant);
+    border-radius: 43px;
+    padding: 2rem;
+    transition: all 500ms;
+}
+.coding:hover{
+    background-color: var(--color-bg);
+    border-color: var(--color-primary);
+}
+.coding h3{
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+}
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1024px) {
+.exp__container{
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 5%;
+}
+.coding,.web_d{
+    width: 65%;
+}
+.E_Head h1{
+    font-size: 2rem;
+}
+.E_Head h4{
+    font-size: 1rem;
+}
+ }
+ @media screen and (max-width:600px){
+    .exp__container{
+        grid-template-columns: 1fr;
+        gap: 10%;
+        width: 100%;
+        padding: 1rem;
+    }
+    .coding,.web_d{
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .coding h3,.web_d h3{
+        font-size: 1.2rem;
+    }
+    #experience{
+        margin-top: 15rem;
+    }
+    .skill,.skillsets{
+        font-size: smaller;
+    }
+    .skillset{
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        /* place-items: center; */
+        font-size: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+ }

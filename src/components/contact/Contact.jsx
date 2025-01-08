@@ -41,7 +41,7 @@ function Contact() {
               <small className='icon'><FaWhatsapp/></small>
                <h5>WhatsApp</h5>
                <small>930-5009-047</small>
-               <small className='live'><a href="https://api.whatsapp.com/send?phone=+9305009047" target='_blank'>Send a message</a></small>
+               <small className='live'><a href="https://api.whatsapp.com/send?phone=+9305009047" rel="noopener noreferrer" target='_blank'>Send a message</a></small>
               </article>
           </div>
           

@@ -9,7 +9,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import Intro from './components/header/Intro';
 function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -20,6 +20,7 @@ function App() {
   return (
     <div >
       <motion.div className="progress-bar" style={{ scaleX }} />
+      <Intro/>
       <Header></Header>
       <Nav></Nav>
       <About></About>
